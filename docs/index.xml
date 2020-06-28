@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Goldydocs – Documentation</title>
+    <title>Goldydocs – Methods and Architectures</title>
     <link>https://samarehsamadi.github.io/Machine-Learning/docs/</link>
-    <description>Recent content in Documentation on Goldydocs</description>
+    <description>Recent content in Methods and Architectures on Goldydocs</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://samarehsamadi.github.io/Machine-Learning/docs/index.xml" rel="self" type="application/rss+xml" />
