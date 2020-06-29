@@ -1,10 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Goldydocs – Tutorials</title>
+    <title>Goldydocs – GAN</title>
     <link>https://samarehsamadi.github.io/Machine-Learning/docs/tutorials/</link>
-    <description>Recent content in Tutorials on Goldydocs</description>
+    <description>Recent content in GAN on Goldydocs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	  <atom:link href="https://samarehsamadi.github.io/Machine-Learning/docs/tutorials/index.xml" rel="self" type="application/rss+xml" />
     
