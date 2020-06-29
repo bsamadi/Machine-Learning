@@ -1,6 +1,6 @@
 ---
-title: "Overview"
-linkTitle: "Overview"
+title: "Noisy Label"
+linkTitle: "Noise"
 weight: 1
 description: >
   Here's where your user finds out if your project is for them.
