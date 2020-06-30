@@ -43,18 +43,18 @@ the advantages of the mean absolute loss and the cross entropy loss to obtain a 
 ## JoCoR
 
 * Paper:
-** Title: Combating Noisy Labels by Agreement: A Joint Training Method with Co-Regularization
-** Datasets: MNIST, CIFAR-10, CIFAR-100 and Clothing1M
-** Main idea: To encourage two different classifiers
-to make predictions closer to each other by explicit regularization.
-** Network
-** Equations
+  *  Title: Combating Noisy Labels by Agreement: A Joint Training Method with Co-Regularization
+  *  Datasets: MNIST, CIFAR-10, CIFAR-100 and Clothing1M
+  *  Main idea: To encourage two different classifiers
+      to make predictions closer to each other by explicit regularization.
+  *  Network
+  *  Equations
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" title="l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)+\lambda * l_{con}(\bold{x}_i,y_i)" /></a>
+    <a href="https://www.codecogs.com/eqnedit.php?latex=l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" target="_blank"><img       src="https://latex.codecogs.com/gif.latex?l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" title="l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)+\lambda * l_{con}(\bold{x}_i,y_i)" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)&plus;l_{C2}(\bold{x}_i,y_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)&plus;l_{C2}(\bold{x}_i,y_i)" title="l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)+l_{C2}(\bold{x}_i,y_i)" /></a>
+    <a href="https://www.codecogs.com/eqnedit.php?latex=l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)&plus;l_{C2}(\bold{x}_i,y_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)&plus;l_{C2}(\bold{x}_i,y_i)" title="l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)+l_{C2}(\bold{x}_i,y_i)" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=l_{con}(\bold{x}_i,y_i)=D_{KL}(\bold{p_1}||\bold{p_2})&plus;D_{KL}(\bold{p_2}||\bold{p_1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l_{con}(\bold{x}_i,y_i)=D_{KL}(\bold{p_1}||\bold{p_2})&plus;D_{KL}(\bold{p_2}||\bold{p_1})" title="l_{con}(\bold{x}_i,y_i)=D_{KL}(\bold{p_1}||\bold{p_2})+D_{KL}(\bold{p_2}||\bold{p_1})" /></a>
+    <a href="https://www.codecogs.com/eqnedit.php?latex=l_{con}(\bold{x}_i,y_i)=D_{KL}(\bold{p_1}||\bold{p_2})&plus;D_{KL}(\bold{p_2}||\bold{p_1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l_{con}(\bold{x}_i,y_i)=D_{KL}(\bold{p_1}||\bold{p_2})&plus;D_{KL}(\bold{p_2}||\bold{p_1})" title="l_{con}(\bold{x}_i,y_i)=D_{KL}(\bold{p_1}||\bold{p_2})+D_{KL}(\bold{p_2}||\bold{p_1})" /></a>
 
 it aims to reduce the diversity of two networks during training. Specifically, it uses two networks to make predictions on
 the same mini-batch data and calculate a joint loss with
