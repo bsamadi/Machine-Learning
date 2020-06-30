@@ -20,16 +20,16 @@ of DNNs [1, 44].
 
 * estimate the latent noisy transition matrix [21, 24, 32].  
 
-*training on selected or weighted samples, e.g., Mentornet [16], gradient-based reweight [ref](https://arxiv.org/pdf/1803.09050.pdf) and Co-teaching [12]. 
+* training on selected or weighted samples, e.g., Mentornet [16], gradient-based reweight [ref](https://arxiv.org/pdf/1803.09050.pdf) and Co-teaching [12]. 
 
-*Small-loss selection
+* Small-loss selection
 
 The stateof-the-art approaches are:
 * Decoupling
 
 * Co-teaching+
 
-*JoCoR (Joint Training with Co-Regularization)
+* JoCoR (Joint Training with Co-Regularization)
 
 Other deep learning methods. In addition to the aforementioned approaches, there are some other deep learning solutions [13, 17] to deal with noisy labels, including pseudo-label based [35, 40] and robust loss based approaches [28, 46]. For pseudo-label based approaches, Joint
 optimization [35] learns network parameters and infers the
@@ -43,11 +43,11 @@ the advantages of the mean absolute loss and the cross entropy loss to obtain a 
 ## JoCoR
 
 *Paper:
-**Title: Combating Noisy Labels by Agreement: A Joint Training Method with Co-Regularization
-**Datasets: MNIST, CIFAR-10, CIFAR-100 and Clothing1M
+** Title: Combating Noisy Labels by Agreement: A Joint Training Method with Co-Regularization
+** Datasets: MNIST, CIFAR-10, CIFAR-100 and Clothing1M
 ** Main idea: To encourage two different classifiers
 to make predictions closer to each other by explicit regularization.
-**Network
+** Network
 ** Equations
 <a href="https://www.codecogs.com/eqnedit.php?latex=l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" title="l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)+\lambda * l_{con}(\bold{x}_i,y_i)" /></a>
 
