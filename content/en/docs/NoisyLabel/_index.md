@@ -54,8 +54,6 @@ the advantages of the mean absolute loss and the cross entropy loss to obtain a 
      style="float: left; margin-right: 10px;" />
   
   *  Equations
-  
-  ![Algorithm](JoCor_Algorithm.JPG)
 
     <a href="https://www.codecogs.com/eqnedit.php?latex=l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" target="_blank"><img       src="https://latex.codecogs.com/gif.latex?l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" title="l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)+\lambda * l_{con}(\bold{x}_i,y_i)" /></a>
 
@@ -67,6 +65,9 @@ it aims to reduce the diversity of two networks during training. Specifically, i
 the same mini-batch data and calculate a joint loss with
 Co-Regularization for each training example.
 
+    * Algorithm
+    
+    ![Algorithm](JoCor_Algorithm.JPG)
 ## CleanLab
 
 Where can your user find your project code? How can they install it (binaries, installable package, build from source)? Are there multiple options/versions they can install and how should they choose the right one for them?
