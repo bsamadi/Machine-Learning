@@ -43,6 +43,7 @@ the advantages of the mean absolute loss and the cross entropy loss to obtain a 
 ## JoCoR
 
 * Paper:
+
   *  Title: Combating Noisy Labels by Agreement: A Joint Training Method with Co-Regularization
   *  Datasets: MNIST, CIFAR-10, CIFAR-100 and Clothing1M
   *  Main idea: To encourage two different classifiers
