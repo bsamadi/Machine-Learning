@@ -1,26 +1,54 @@
 ---
-title: "Domain Adaptation"
-linkTitle: "Domain Adaptation"
+title: "Noisy Label"
+linkTitle: "Noisy Label"
 weight: 2
 description: >
-  Some domain adaptation and transfer learning methods are reviewed here.
+  Some methods to tackle noisy label problem are reviewed here.
 ---
 
 {{% pageinfo %}}
 You can find some codes in Notebook tab.
 {{% /pageinfo %}}
 
-Information in this section helps your user try your project themselves.
+Deep Learning with noisy labels is a practically challenging problem in weakly supervised learning.
 
-* What do your users need to do to start using your project? This could include downloading/installation instructions, including any prerequisites or system requirements.
+* Annotation companies choose some alternating methods such as crowdsourcing [39, 43] and online queries [3] to
+improve labelling efficiency. Unfortunately, these methods
+usually suffer from unavoidable noisy labels, which have
+been proven to lead to noticeable decrease in performance
+of DNNs [1, 44].
 
-* Introductory “Hello World” example, if appropriate. More complex tutorials should live in the Tutorials section.
+* estimate the latent noisy transition matrix [21, 24, 32].  
 
-Consider using the headings below for your getting started page. You can delete any that are not applicable to your project.
+*training on selected or weighted samples, e.g., Mentornet [16], gradient-based reweight [ref](https://arxiv.org/pdf/1803.09050.pdf) and Co-teaching [12]. 
 
-## Prerequisites
+*Small-loss selection
 
-Are there any system requirements for using your project? What languages are supported (if any)? Do users need to already have any software or tools installed?
+The stateof-the-art approaches are:
+* Decoupling
+
+* Co-teaching+
+
+*JoCoR (Joint Training with Co-Regularization)
+
+Other deep learning methods. In addition to the aforementioned approaches, there are some other deep learning solutions [13, 17] to deal with noisy labels, including pseudo-label based [35, 40] and robust loss based approaches [28, 46]. For pseudo-label based approaches, Joint
+optimization [35] learns network parameters and infers the
+ground-true labels simultaneously. PENCIL [40] adopts label probability distributions to supervise network learning
+and to update these distributions through back-propagation
+end-to-end in each epoch. For robust loss based approaches,
+F-correct[28] proposes a robust risk minimization method
+to learn neural networks for multi-class classification by estimating label corruption probabilities. GCE [46] combines
+the advantages of the mean absolute loss and the cross entropy loss to obtain a better loss function and presents a theoretical analysis of the proposed loss functions in the context of noisy labels.
+
+## JoCoR
+
+*Paper:
+**Title: Combating Noisy Labels by Agreement: A Joint Training Method with Co-Regularization
+**Datasets: MNIST, CIFAR-10, CIFAR-100 and Clothing1M
+
+it aims to reduce the diversity of two networks during training. Specifically, it uses two networks to make predictions on
+the same mini-batch data and calculate a joint loss with
+Co-Regularization for each training example.
 
 ## Installation
 
