@@ -29,7 +29,7 @@ The stateof-the-art approaches are:
 
 * Co-teaching+
 
-* JoCoR (Joint Training with Co-Regularization)
+* [JoCoR (Joint Training with Co-Regularization)](https://arxiv.org/pdf/2003.02752.pdf)
 
 Other deep learning methods. In addition to the aforementioned approaches, there are some other deep learning solutions [13, 17] to deal with noisy labels, including pseudo-label based [35, 40] and robust loss based approaches [28, 46]. For pseudo-label based approaches, Joint
 optimization [35] learns network parameters and infers the
