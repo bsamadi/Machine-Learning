@@ -3,19 +3,28 @@ title: "Domain Adaptation"
 linkTitle: "Domain Adaptation"
 weight: 1
 description: >
-  Here's where your user finds out if your project is for them.
+  Here's where you can find some domain adaptation techniques.
 ---
 
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+Note: This page is a mixed up of different references. Networks and algorithms and some texts are taken from the references.
 {{% /pageinfo %}}
 
 
-The Overview is where your users find out about your project. Depending on the size of your docset, you can have a separate overview page (like this one) or put your overview contents in the Documentation landing page (like in the Docsy User Guide). 
+Previous works in domain adaptation are majorly based on two techniques: 
 
-Try answering these questions for your user in this page:
+* domain-adversarial learning
 
-## What is it?
+it aligns feature distributions between domains but does not consider whether the
+target features are discriminative.
+
+* self-training.
+
+It utilizes the model predictions to enhance the discrimination of target features, but it is unable to explicitly
+align domain distributions.
+
+## [Adversarial-Learned Loss for Domain Adaptation](https://arxiv.org/pdf/2001.01046.pdf)
+Note: Most of the text here have bben copied from [here](https://arxiv.org/pdf/2001.01046.pdf).
 
 Introduce your project, including what it does or lets you do, why you would use it, and its primary goal (and how it achieves it). This should be similar to your README description, though you can go into a little more detail here if you want.
 
