@@ -564,7 +564,12 @@ the advantages of the mean absolute loss and the cross entropy loss to obtain a 
 **Title: Combating Noisy Labels by Agreement: A Joint Training Method with Co-Regularization
 **Datasets: MNIST, CIFAR-10, CIFAR-100 and Clothing1M
 ** Main idea: To encourage two different classifiers
-to make predictions closer to each other by explicit regularization.</p>
+to make predictions closer to each other by explicit regularization.
+**Network
+** Equations
+<a href="https://www.codecogs.com/eqnedit.php?latex=l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" title="l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)+\lambda * l_{con}(\bold{x}_i,y_i)" /></a></p>
+<p><a href="https://www.codecogs.com/eqnedit.php?latex=l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)&plus;l_{C2}(\bold{x}_i,y_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)&plus;l_{C2}(\bold{x}_i,y_i)" title="l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)+l_{C2}(\bold{x}_i,y_i)" /></a></p>
+<p><a href="https://www.codecogs.com/eqnedit.php?latex=l_{con}(\bold{x}_i,y_i)=D_{KL}(\bold{p_1}||\bold{p_2})&plus;D_{KL}(\bold{p_2}||\bold{p_1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l_{con}(\bold{x}_i,y_i)=D_{KL}(\bold{p_1}||\bold{p_2})&plus;D_{KL}(\bold{p_2}||\bold{p_1})" title="l_{con}(\bold{x}_i,y_i)=D_{KL}(\bold{p_1}||\bold{p_2})+D_{KL}(\bold{p_2}||\bold{p_1})" /></a></p>
 <p>it aims to reduce the diversity of two networks during training. Specifically, it uses two networks to make predictions on
 the same mini-batch data and calculate a joint loss with
 Co-Regularization for each training example.</p>
@@ -685,7 +690,7 @@ Co-Regularization for each training example.</p>
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified June 29, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/5645626c8bf7192d20be2d10eb23baa7f0ff7a90">Update and rename content/en/docs/Overview/_index.md to content/en/docs/DomainAdaptation/_index.md (5645626)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified June 30, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/25028c5f10f38385d8141ad164b341a8720a2162">Update _index.md (25028c5)</a>
 </div>
 </div>
 
