@@ -566,14 +566,16 @@ F-correct[28] proposes a robust risk minimization method
 to learn neural networks for multi-class classification by estimating label corruption probabilities. GCE [46] combines
 the advantages of the mean absolute loss and the cross entropy loss to obtain a better loss function and presents a theoretical analysis of the proposed loss functions in the context of noisy labels.</p>
 <h2 id="jocor">JoCoR</h2>
-<p>*Paper:
+<ul>
+<li>Paper:
 ** Title: Combating Noisy Labels by Agreement: A Joint Training Method with Co-Regularization
 ** Datasets: MNIST, CIFAR-10, CIFAR-100 and Clothing1M
 ** Main idea: To encourage two different classifiers
 to make predictions closer to each other by explicit regularization.
 ** Network
-** Equations
-<a href="https://www.codecogs.com/eqnedit.php?latex=l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" title="l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)+\lambda * l_{con}(\bold{x}_i,y_i)" /></a></p>
+** Equations</li>
+</ul>
+<p><a href="https://www.codecogs.com/eqnedit.php?latex=l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" title="l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)+\lambda * l_{con}(\bold{x}_i,y_i)" /></a></p>
 <p><a href="https://www.codecogs.com/eqnedit.php?latex=l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)&plus;l_{C2}(\bold{x}_i,y_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)&plus;l_{C2}(\bold{x}_i,y_i)" title="l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)+l_{C2}(\bold{x}_i,y_i)" /></a></p>
 <p><a href="https://www.codecogs.com/eqnedit.php?latex=l_{con}(\bold{x}_i,y_i)=D_{KL}(\bold{p_1}||\bold{p_2})&plus;D_{KL}(\bold{p_2}||\bold{p_1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l_{con}(\bold{x}_i,y_i)=D_{KL}(\bold{p_1}||\bold{p_2})&plus;D_{KL}(\bold{p_2}||\bold{p_1})" title="l_{con}(\bold{x}_i,y_i)=D_{KL}(\bold{p_1}||\bold{p_2})+D_{KL}(\bold{p_2}||\bold{p_1})" /></a></p>
 <p>it aims to reduce the diversity of two networks during training. Specifically, it uses two networks to make predictions on
@@ -696,7 +698,7 @@ Co-Regularization for each training example.</p>
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified June 30, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/f7ab4b654359a529c682e19eb35ec1f99595fcbb">Update _index.md (f7ab4b6)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified June 30, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/3191691b824c8a3f3ba6b60a80ebe21e0f8bf295">Update _index.md (3191691)</a>
 </div>
 </div>
 
