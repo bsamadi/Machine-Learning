@@ -49,13 +49,13 @@ the advantages of the mean absolute loss and the cross entropy loss to obtain a 
   *  Main idea: To encourage two different classifiers
       to make predictions closer to each other by explicit regularization.
   *  Network
-  <img src="JoCor.jpg"
+  <img src="JoCor.JPG"
      alt="Network"
      style="float: left; margin-right: 10px;" />
   
   *  Equations
   
-  ![Algorithm](JoCor_Algorithm.jpg)
+  ![Algorithm](JoCor_Algorithm.JPG)
 
     <a href="https://www.codecogs.com/eqnedit.php?latex=l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" target="_blank"><img       src="https://latex.codecogs.com/gif.latex?l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" title="l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)+\lambda * l_{con}(\bold{x}_i,y_i)" /></a>
 
