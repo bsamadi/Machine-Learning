@@ -474,15 +474,6 @@
 
 
 
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#jocor">JoCoR</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#setup">Setup</a></li>
-    <li><a href="#try-it-out">Try it out!</a></li>
-  </ul>
-</nav>
-
 
 
           </div>
@@ -574,8 +565,10 @@ the advantages of the mean absolute loss and the cross entropy loss to obtain a 
 <li>Datasets: MNIST, CIFAR-10, CIFAR-100 and Clothing1M</li>
 <li>Main idea: To encourage two different classifiers
 to make predictions closer to each other by explicit regularization.</li>
-<li>Network</li>
-<li>Equations</li>
+<li>Network
+<a href="">Network</a></li>
+<li>Equations
+<a href="./images/JoCor_Algorithm.jpg">Algorithm</a></li>
 </ul>
 <p><a href="https://www.codecogs.com/eqnedit.php?latex=l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" target="_blank"><img       src="https://latex.codecogs.com/gif.latex?l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" title="l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)+\lambda * l_{con}(\bold{x}_i,y_i)" /></a></p>
 <p><a href="https://www.codecogs.com/eqnedit.php?latex=l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)&plus;l_{C2}(\bold{x}_i,y_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)&plus;l_{C2}(\bold{x}_i,y_i)" title="l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)+l_{C2}(\bold{x}_i,y_i)" /></a></p>
@@ -585,12 +578,8 @@ to make predictions closer to each other by explicit regularization.</li>
 <p>it aims to reduce the diversity of two networks during training. Specifically, it uses two networks to make predictions on
 the same mini-batch data and calculate a joint loss with
 Co-Regularization for each training example.</p>
-<h2 id="installation">Installation</h2>
+<h2 id="cleanlab">CleanLab</h2>
 <p>Where can your user find your project code? How can they install it (binaries, installable package, build from source)? Are there multiple options/versions they can install and how should they choose the right one for them?</p>
-<h2 id="setup">Setup</h2>
-<p>Is there any initial setup users need to do after installation to try your project?</p>
-<h2 id="try-it-out">Try it out!</h2>
-<p>Can your users test their installation, for example by running a commmand or deploying a Hello World example?</p>
 
         <div class="section-index">
     
@@ -702,7 +691,7 @@ Co-Regularization for each training example.</p>
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified June 30, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/cabd08d377ab7ff830d40005da43e7c4deab35c6">Update _index.md (cabd08d)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified June 30, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/b92aa04639d0db95f4fd3d18d911bf05ef127a35">Update _index.md (b92aa04)</a>
 </div>
 </div>
 
