@@ -49,8 +49,9 @@ the advantages of the mean absolute loss and the cross entropy loss to obtain a 
   *  Main idea: To encourage two different classifiers
       to make predictions closer to each other by explicit regularization.
   *  Network
-  
-  ![Network](JoCor.jpg)
+  <img src="JoCor.jpg"
+     alt="Network"
+     style="float: left; margin-right: 10px;" />
   
   *  Equations
   
