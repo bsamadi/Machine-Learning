@@ -7,7 +7,7 @@ description: >
 ---
 
 {{% pageinfo %}}
-You can find some codes in Notebook tab.
+Note: This page is a mixed up of different references. Networks and algorithms and some texts are taken from the references.
 {{% /pageinfo %}}
 
 Deep Learning with noisy labels is a practically challenging problem in weakly supervised learning.
