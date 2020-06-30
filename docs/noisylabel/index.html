@@ -538,9 +538,13 @@ of DNNs [1, 44].</p>
 <li>
 <p>estimate the latent noisy transition matrix [21, 24, 32].</p>
 </li>
+<li>
+<p>training on selected or weighted samples, e.g., Mentornet [16], gradient-based reweight <a href="https://arxiv.org/pdf/1803.09050.pdf">ref</a> and Co-teaching [12].</p>
+</li>
+<li>
+<p>Small-loss selection</p>
+</li>
 </ul>
-<p>*training on selected or weighted samples, e.g., Mentornet [16], gradient-based reweight <a href="https://arxiv.org/pdf/1803.09050.pdf">ref</a> and Co-teaching [12].</p>
-<p>*Small-loss selection</p>
 <p>The stateof-the-art approaches are:</p>
 <ul>
 <li>
@@ -549,8 +553,10 @@ of DNNs [1, 44].</p>
 <li>
 <p>Co-teaching+</p>
 </li>
+<li>
+<p>JoCoR (Joint Training with Co-Regularization)</p>
+</li>
 </ul>
-<p>*JoCoR (Joint Training with Co-Regularization)</p>
 <p>Other deep learning methods. In addition to the aforementioned approaches, there are some other deep learning solutions [13, 17] to deal with noisy labels, including pseudo-label based [35, 40] and robust loss based approaches [28, 46]. For pseudo-label based approaches, Joint
 optimization [35] learns network parameters and infers the
 ground-true labels simultaneously. PENCIL [40] adopts label probability distributions to supervise network learning
@@ -561,11 +567,11 @@ to learn neural networks for multi-class classification by estimating label corr
 the advantages of the mean absolute loss and the cross entropy loss to obtain a better loss function and presents a theoretical analysis of the proposed loss functions in the context of noisy labels.</p>
 <h2 id="jocor">JoCoR</h2>
 <p>*Paper:
-**Title: Combating Noisy Labels by Agreement: A Joint Training Method with Co-Regularization
-**Datasets: MNIST, CIFAR-10, CIFAR-100 and Clothing1M
+** Title: Combating Noisy Labels by Agreement: A Joint Training Method with Co-Regularization
+** Datasets: MNIST, CIFAR-10, CIFAR-100 and Clothing1M
 ** Main idea: To encourage two different classifiers
 to make predictions closer to each other by explicit regularization.
-**Network
+** Network
 ** Equations
 <a href="https://www.codecogs.com/eqnedit.php?latex=l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" title="l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)+\lambda * l_{con}(\bold{x}_i,y_i)" /></a></p>
 <p><a href="https://www.codecogs.com/eqnedit.php?latex=l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)&plus;l_{C2}(\bold{x}_i,y_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)&plus;l_{C2}(\bold{x}_i,y_i)" title="l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)+l_{C2}(\bold{x}_i,y_i)" /></a></p>
@@ -690,7 +696,7 @@ Co-Regularization for each training example.</p>
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified June 30, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/25028c5f10f38385d8141ad164b341a8720a2162">Update _index.md (25028c5)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified June 30, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/f7ab4b654359a529c682e19eb35ec1f99595fcbb">Update _index.md (f7ab4b6)</a>
 </div>
 </div>
 
