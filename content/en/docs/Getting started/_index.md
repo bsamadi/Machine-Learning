@@ -45,6 +45,8 @@ the advantages of the mean absolute loss and the cross entropy loss to obtain a 
 *Paper:
 **Title: Combating Noisy Labels by Agreement: A Joint Training Method with Co-Regularization
 **Datasets: MNIST, CIFAR-10, CIFAR-100 and Clothing1M
+** Main idea: To encourage two different classifiers
+to make predictions closer to each other by explicit regularization.
 
 it aims to reduce the diversity of two networks during training. Specifically, it uses two networks to make predictions on
 the same mini-batch data and calculate a joint loss with
