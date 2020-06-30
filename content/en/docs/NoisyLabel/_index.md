@@ -68,7 +68,10 @@ Co-Regularization for each training example.
     * Algorithm
     
     ![Algorithm](JoCor_Algorithm.JPG)
-## CleanLab
+
+## [CleanLab](https://github.com/cgnorthcutt/cleanlab)
 
 Where can your user find your project code? How can they install it (binaries, installable package, build from source)? Are there multiple options/versions they can install and how should they choose the right one for them?
+
+## [inpainting](https://arxiv.org/pdf/1910.11908.pdf)
 
