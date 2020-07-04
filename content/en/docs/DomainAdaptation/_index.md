@@ -113,7 +113,7 @@ Note: Most of the text here have been copied from [here](https://arxiv.org/pdf/2
 * idea
 ** construct a common feature space under the guidance of the Gaussian prior.
 ** instead of the discriminator error, it minimizes the direct L1-distance between the decoded samples.
-$$L_1(\bold{x}_s,\bold{x}_t) -log_p(\bold{x}_s \| \bold{z}_t)$$
+$$L_1(\bold{x}_s,\hat{\bold{x}}_t) \propto -\log_p(\bold{x}_s | \bold{z}_t)$$
 * Distribution alignment
 
 Decoder 
