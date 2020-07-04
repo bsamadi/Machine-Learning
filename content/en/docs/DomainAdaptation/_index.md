@@ -6,10 +6,8 @@ description: >
   Here's where you can find some domain adaptation techniques.
 ---
 
-{{% pageinfo %}}
-Note: This page is a mixed up of different references. Networks and algorithms and some texts are taken from the references.
-{{% /pageinfo %}}
-11
+* Note: This page is a mixed up of different references. Networks and algorithms and some texts are taken from the references.
+
 The deep neural networks trained on
 training datasets (source domain) cannot generalize well on the application datasets (target domain) because there is a discrepancy between assumptions on the source domain and the target domain. For example, in medical imaging data may be collected in different medical centers, the radiolosoists may use different machine settings or their behaviour sometimes may affect the data characterization. Essentially, the difference in data distribution between domains makes it difficult
 to transfer knowledge from the source to target domains. This transferring problem is known as domain shift (Torralba
@@ -72,7 +70,7 @@ advantage of large quantities of labeled data. However,
 the models trained on one dataset typically perform
 poorly on another different but related dataset [1], [2].
 
- Existing UDA algorithms attempt to mitigate domain shifts by only considering the classifier-induced discrepancy between the two
+Existing UDA algorithms attempt to mitigate domain shifts by only considering the classifier-induced discrepancy between the two
 domains, which can reduce the domain divergence [3].
 
  Advances in adversarial DA
@@ -111,6 +109,10 @@ probability of discriminative models for domain adaptation.
 ## [discriminative feature alignment (DFA)](https://arxiv.org/pdf/2006.12770.pdf)
 Note: Most of the text here have been copied from [here](https://arxiv.org/pdf/2006.12770.pdf).
 [Code:](https://github.com/JingWang18/Discriminative-Feature-Alignment)
+
+* idea
+** construct a common feature space under the guidance of the Gaussian prior.
+** instead of the discriminator error, it minimizes the direct L1-distance between the decoded samples.
 
 * Distribution alignment
 
