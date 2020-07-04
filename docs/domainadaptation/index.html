@@ -520,15 +520,10 @@
 	<h1>Domain Adaptation</h1>
         <div class="lead">Here&rsquo;s where you can find some domain adaptation techniques.</div>
 	
-	<p>
-
-<div class="pageinfo pageinfo-primary">
-<p>Note: This page is a mixed up of different references. Networks and algorithms and some texts are taken from the references.</p>
-
-</div>
-
-11
-The deep neural networks trained on
+	<ul>
+<li>Note: This page is a mixed up of different references. Networks and algorithms and some texts are taken from the references.</li>
+</ul>
+<p>The deep neural networks trained on
 training datasets (source domain) cannot generalize well on the application datasets (target domain) because there is a discrepancy between assumptions on the source domain and the target domain. For example, in medical imaging data may be collected in different medical centers, the radiolosoists may use different machine settings or their behaviour sometimes may affect the data characterization. Essentially, the difference in data distribution between domains makes it difficult
 to transfer knowledge from the source to target domains. This transferring problem is known as domain shift (Torralba
 and Efros 2011).[11]
@@ -622,7 +617,14 @@ probability of discriminative models for domain adaptation.</p>
 <p>Note: Most of the text here have been copied from <a href="https://arxiv.org/pdf/2006.12770.pdf">here</a>.
 <a href="https://github.com/JingWang18/Discriminative-Feature-Alignment">Code:</a></p>
 <ul>
-<li>Distribution alignment</li>
+<li>
+<p>idea
+** construct a common feature space under the guidance of the Gaussian prior.
+** instead of the discriminator error, it minimizes the direct L1-distance between the decoded samples.</p>
+</li>
+<li>
+<p>Distribution alignment</p>
+</li>
 </ul>
 <p>Decoder
 The proposed regularization has two functionalities in
@@ -767,7 +769,7 @@ regime of its nonlinearity.</p>
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified July 3, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/d670f9ccf9f24698188e6b33cb1627dbd0f1a227">Update _index.md (d670f9c)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified July 3, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/ecbc71d3a2006a23449df807a78bfe28cd290859">Update _index.md (ecbc71d)</a>
 </div>
 </div>
 
