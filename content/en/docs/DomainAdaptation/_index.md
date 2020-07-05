@@ -155,7 +155,26 @@ makes it more difficult for an encoder to stay in the linear
 regime of its nonlinearity.
 
 ## [Maximum Classifier Discrepancy for Unsupervised Domain Adaptation](https://arxiv.org/pdf/1712.02560.pdf)
+* Idea: to align source and target features by utilizing the task-specific classifiers as a discriminator in order to consider the relationship between class
+boundaries and target samples.
+
 ![idea](DA_Classification.JPG)
+
+* Network and algorithm
+
+  * Step A: train both classifiers and generator to
+classify the source samples correctly. In order to make classifiers and generator obtain task-specific discriminative features, this step is crucial. We train the networks to minimize
+softmax cross entropy. The objective is as follows:
+
+$$ min_{G,F1,F2}L(\bold{X}_s, \bold{Y}_s)$$
+
+[Step B]
+
+![idea](DA_StepB.JPG)
+
+[Step C]
+
+![idea](DA_StepC.JPG)
 
 * **What is it good for?**: What types of problems does your project solve? What are the benefits of using it?
 
