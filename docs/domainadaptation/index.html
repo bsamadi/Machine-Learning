@@ -667,7 +667,26 @@ autoencoder (DAE) [26]. DAE shows that the tying weight
 makes it more difficult for an encoder to stay in the linear
 regime of its nonlinearity.</p>
 <h2 id="maximum-classifier-discrepancy-for-unsupervised-domain-adaptationhttpsarxivorgpdf171202560pdf"><a href="https://arxiv.org/pdf/1712.02560.pdf">Maximum Classifier Discrepancy for Unsupervised Domain Adaptation</a></h2>
+<ul>
+<li>Idea: to align source and target features by utilizing the task-specific classifiers as a discriminator in order to consider the relationship between class
+boundaries and target samples.</li>
+</ul>
 <p><img src="DA_Classification.JPG" alt="idea"></p>
+<ul>
+<li>
+<p>Network and algorithm</p>
+<ul>
+<li>Step A: train both classifiers and generator to
+classify the source samples correctly. In order to make classifiers and generator obtain task-specific discriminative features, this step is crucial. We train the networks to minimize
+softmax cross entropy. The objective is as follows:</li>
+</ul>
+</li>
+</ul>
+<p>$$ min_{G,F1,F2}L(\bold{X}_s, \bold{Y}_s)$$</p>
+<p>[Step B]</p>
+<p><img src="DA_StepB.JPG" alt="idea"></p>
+<p>[Step C]</p>
+<p><img src="DA_StepC.JPG" alt="idea"></p>
 <ul>
 <li>
 <p><strong>What is it good for?</strong>: What types of problems does your project solve? What are the benefits of using it?</p>
@@ -796,7 +815,7 @@ regime of its nonlinearity.</p>
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified July 4, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/552d479aad090075df74d40b811fc2c50fed3521">Update _index.md (552d479)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified July 4, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/42a0531389f5ba472145e2f9ce48017d74fb8bef">Update _index.md (42a0531)</a>
 </div>
 </div>
 
