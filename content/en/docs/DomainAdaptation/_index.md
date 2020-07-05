@@ -112,11 +112,11 @@ Note: Most of the text here have been copied from [here](https://arxiv.org/pdf/2
 
 * idea
 
-  ** construct a common feature space under the guidance of the Gaussian prior.
+  * construct a common feature space under the guidance of the Gaussian prior.
 
 ![Gaussian Prior](DAL_idea.JPG)
 
-*  ** instead of the discriminator error, it minimizes the direct L1-distance between the decoded samples.
+  * instead of the discriminator error, it minimizes the direct L1-distance between the decoded samples.
 
 $$L_1(\bold{x}_s,\hat{\bold{x}}_t) \propto -\log_p(\bold{x}_s | \bold{z}_t)$$
 
@@ -130,11 +130,11 @@ $$L_1(\bold{x}_s,\hat{\bold{x}}_t) \propto -\log_p(\bold{x}_s | \bold{z}_t)$$
 
 * Algorithm
 
-*  **  Adversarial Domain Adaptation
+  *  Adversarial Domain Adaptation
 
 ![Algorithm 1](DAL_Alg1.JPG)
 
-*  ** Non-adversarial Domain Adaptation
+  * Non-adversarial Domain Adaptation
 
 ![Algorithm 2](DAL_Alg2.JPG)
 
