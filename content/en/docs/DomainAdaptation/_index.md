@@ -130,7 +130,7 @@ $$L_1(\bold{x}_s,\hat{\bold{x}}_t) \propto -\log_p(\bold{x}_s | \bold{z}_t)$$
 
 * Algorithm
 
-  *  Adversarial Domain Adaptation
+  * Adversarial Domain Adaptation
 
 ![Algorithm 1](DAL_Alg1.JPG)
 
