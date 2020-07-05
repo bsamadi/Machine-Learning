@@ -155,7 +155,7 @@ makes it more difficult for an encoder to stay in the linear
 regime of its nonlinearity.
 
 ## [Maximum Classifier Discrepancy for Unsupervised Domain Adaptation](https://arxiv.org/pdf/1712.02560.pdf)
-
+![idea](DA_Classification.JPG)
 
 * **What is it good for?**: What types of problems does your project solve? What are the benefits of using it?
 
