@@ -170,11 +170,11 @@ $$ min_{G,F1,F2}L(\bold{X}_s, \bold{Y}_s)$$
 
 [Step B]
 
-![idea](DA_StepB.JPG)
+![Step B](DA_StepB.JPG)
 
 [Step C]
 
-![idea](DA_StepC.JPG)
+![Step C](DA_StepC.JPG)
 
 * **What is it good for?**: What types of problems does your project solve? What are the benefits of using it?
 
