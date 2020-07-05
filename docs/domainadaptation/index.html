@@ -618,11 +618,26 @@ probability of discriminative models for domain adaptation.</p>
 <a href="https://github.com/JingWang18/Discriminative-Feature-Alignment">Code:</a></p>
 <ul>
 <li>idea
-** construct a common feature space under the guidance of the Gaussian prior.
-** instead of the discriminator error, it minimizes the direct L1-distance between the decoded samples.
-$$L_1(\bold{x}_s,\hat{\bold{x}}_t) \propto -\log_p(\bold{x}_s | \bold{z}_t)$$</li>
+** construct a common feature space under the guidance of the Gaussian prior.</li>
+</ul>
+<p><img src="DAL_idea.JPG" alt="Gaussian Prior"></p>
+<p>** instead of the discriminator error, it minimizes the direct L1-distance between the decoded samples.
+$$L_1(\bold{x}_s,\hat{\bold{x}}_t) \propto -\log_p(\bold{x}_s | \bold{z}_t)$$</p>
+<ul>
 <li>Distribution alignment</li>
 </ul>
+<p><img src="DAL_arch.JPG" alt="Distribution Alignment"></p>
+<ul>
+<li>Network</li>
+</ul>
+<p><img src="DAL_net.JPG" alt="Network"></p>
+<ul>
+<li>Algorithm</li>
+</ul>
+<p>**  Adversarial Domain Adaptation</p>
+<p><img src="DAL_Alg1.JPG" alt="Algorithm 1"></p>
+<p>** Non-adversarial Domain Adaptation</p>
+<p><img src="DAL_Alg2.JPG" alt="Algorithm 2"></p>
 <p>Decoder
 The proposed regularization has two functionalities in
 our model: 1) distribution alignment; 2) discriminative
@@ -766,7 +781,7 @@ regime of its nonlinearity.</p>
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified July 4, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/cc34858b961a55f8254f7db8871e64d95cb4aa9b">Add files via upload (cc34858)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified July 4, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/b9d7763138fca684a5421ddfc596a1eff5e07e20">Update _index.md (b9d7763)</a>
 </div>
 </div>
 
