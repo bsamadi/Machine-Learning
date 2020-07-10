@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Goldydocs – Goldydocs</title>
+    <title>Machine Learning – Goldydocs</title>
     <link>https://samarehsamadi.github.io/Machine-Learning/</link>
-    <description>Recent content on Goldydocs</description>
+    <description>Recent content in Goldydocs on Machine Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://samarehsamadi.github.io/Machine-Learning/index.xml" rel="self" type="application/rss+xml" />

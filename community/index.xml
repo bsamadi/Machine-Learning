@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Goldydocs – Community</title>
+    <title>Machine Learning – Community</title>
     <link>https://samarehsamadi.github.io/Machine-Learning/community/</link>
-    <description>Recent content in Community on Goldydocs</description>
+    <description>Recent content in Community on Machine Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://samarehsamadi.github.io/Machine-Learning/community/index.xml" rel="self" type="application/rss+xml" />
