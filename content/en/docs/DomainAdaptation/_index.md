@@ -1,8 +1,6 @@
 ---
 katex: true
 markup: "mmark"
----
----
 title: "Domain Adaptation"
 linkTitle: "Domain Adaptation"
 weight: 1
