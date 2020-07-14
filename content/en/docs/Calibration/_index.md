@@ -14,10 +14,10 @@ Predicting probabilities allows some flexibility including deciding how to inter
 
 Predicted probabilities that match the expected distribution of probabilities for each class are referred to as calibrated. 
 
-* Reliability Diagrams (Calibration Curves)
+* Reliability Diagrams (Calibration Curvs)
 A reliability diagram is a line plot of the relative frequency of what was observed (y-axis) versus the predicted probability frequency  (x-axis).
 
-The position of the points or the curve relative to the diagonal can help to interpret the probabilities; for example:
+The position of the peoints or the curve relative to the diagonal can help to interpret the probabilities; for example:
 
   * Below the diagonal: The model has over-forecast; the probabilities are too large.
   * Above the diagonal: The model has under-forecast; the probabilities are too small.
@@ -26,6 +26,8 @@ The position of the points or the curve relative to the diagonal can help to int
   * Some algorithms are fit in such a way that their predicted probabilities are already calibrated. Without going into details why, logistic regression is one such example.
 
   *  Other algorithms do not directly produce predictions of probabilities, and instead a prediction of probabilities must be approximated. Some examples include neural networks, support vector machines, and decision trees.
+
+![Calibration Curvs (Reliability Diagrams)](./DAL_idea.JPG)
 
 Calibration of prediction probabilities is a rescaling operation that is applied after the predictions have been made by a predictive model.
 
