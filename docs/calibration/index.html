@@ -22,16 +22,16 @@
 <link rel="icon" type="image/png" href="/Machine-Learning/favicons/android-192x192.png" sizes="192x192">
 
 <title>Calibration | Machine Learning</title><meta property="og:title" content="Calibration" />
-<meta property="og:description" content="See your project in action!
+<meta property="og:description" content="Here&#39;s where you can find some calibration techniques.
 " />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://samarehsamadi.github.io/Machine-Learning/docs/calibration/" />
-<meta property="og:updated_time" content="2020-07-14T08:43:38-07:00" /><meta property="og:site_name" content="Machine Learning" />
+<meta property="og:site_name" content="Machine Learning" />
 <meta itemprop="name" content="Calibration">
-<meta itemprop="description" content="See your project in action!
+<meta itemprop="description" content="Here&#39;s where you can find some calibration techniques.
 "><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Calibration"/>
-<meta name="twitter:description" content="See your project in action!
+<meta name="twitter:description" content="Here&#39;s where you can find some calibration techniques.
 "/>
 
 
@@ -445,8 +445,6 @@
 
 
 
-
-
           </div>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
             
@@ -479,57 +477,68 @@
             
 <div class="td-content">
 	<h1>Calibration</h1>
-        <div class="lead">See your project in action!</div>
+        <div class="lead">Here&rsquo;s where you can find some calibration techniques.</div>
 	
 	<p>Instead of predicting class values directly for a classification problem, it can be convenient to predict the probability of an observation belonging to each possible class.</p>
+
 <p>Predicting probabilities allows some flexibility including deciding how to interpret the probabilities, presenting predictions with uncertainty, and providing more nuanced ways to evaluate the skill of the model.</p>
+
 <p>Predicted probabilities that match the expected distribution of probabilities for each class are referred to as calibrated.</p>
+
 <ul>
 <li>Reliability Diagrams (Calibration Curvs)
 A reliability diagram is a line plot of the relative frequency of what was observed (y-axis) versus the predicted probability frequency  (x-axis).</li>
 </ul>
+
 <p>The position of the peoints or the curve relative to the diagonal can help to interpret the probabilities; for example:</p>
+
 <ul>
-<li>
-<p>Below the diagonal: The model has over-forecast; the probabilities are too large.</p>
-</li>
-<li>
-<p>Above the diagonal: The model has under-forecast; the probabilities are too small.</p>
-</li>
-<li>
-<p>importatnt</p>
+<li>Below the diagonal: The model has over-forecast; the probabilities are too large.</li>
+
+<li><p>Above the diagonal: The model has under-forecast; the probabilities are too small.</p></li>
+
+<li><p>importatnt</p>
+
 <ul>
-<li>
-<p>Some algorithms are fit in such a way that their predicted probabilities are already calibrated. Without going into details why, logistic regression is one such example.</p>
-</li>
-<li>
-<p>Other algorithms do not directly produce predictions of probabilities, and instead a prediction of probabilities must be approximated. Some examples include neural networks, support vector machines, and decision trees.</p>
-</li>
+<li><p>Some algorithms are fit in such a way that their predicted probabilities are already calibrated. Without going into details why, logistic regression is one such example.</p></li>
+
+<li><p>Other algorithms do not directly produce predictions of probabilities, and instead a prediction of probabilities must be approximated. Some examples include neural networks, support vector machines, and decision trees.</p></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<p><img src="./images/sphx_glr_plot_compare_calibration_0011.png" alt="Calibration Curvs (Reliability Diagrams)"></p>
+
+<p><figure><img src="./images/sphx_glr_plot_compare_calibration_0011.png" alt="Calibration Curvs (Reliability Diagrams)"></figure></p>
+
 <p>Calibration of prediction probabilities is a rescaling operation that is applied after the predictions have been made by a predictive model.</p>
+
 <p>There are two popular approaches to calibrating probabilities; they are the Platt Scaling and Isotonic Regression.</p>
+
 <p><a href="https://machinelearningmastery.com/calibrated-classification-model-in-scikit-learn/">here</a></p>
+
 <p>There are two methods of Calibration:</p>
+
 <ul>
 <li>Sigmoid/ Platt’s
-$$P_i=\frac{1}{1+exp^{Af_i+B}}$$</li>
+<span  class="math">\(P_i=\frac{1}{1+exp^{Af_i+B}}\)</span></li>
 </ul>
-<p>$$f_i=f(\bold{x_i})$$ is the output of model given $$\bold{x_i}$$. A and B are parameters that will be learned.
-$$P_i$$ is the probabilty of the datapoint belonging to a class.</p>
+
+<p><span  class="math">\(f_i=f(\bold{x_i})\)</span> is the output of model given <span  class="math">\(\bold{x_i}\)</span>. A and B are parameters that will be learned.
+<span  class="math">\(P_i\)</span> is the probabilty of the datapoint belonging to a class.</p>
+
 <ul>
 <li>Isotonic
-$$y_i=m(f_i)+\epsilon_i$$
-$$\hat{m}=argmin_z(y_i-z(f_i))$$</li>
+<span  class="math">\(y_i=m(f_i)+\epsilon_i\)</span>
+<span  class="math">\(\hat{m}=argmin_z(y_i-z(f_i))\)</span></li>
 </ul>
+
 <p>scikit-learn:</p>
+
 <ul>
 <li>calibration_curve()</li>
 <li>CalibratedClassifierCV</li>
 </ul>
-<p>[Code :] ( <a href="https://github.com/SubhamIO/Calibration-Techniques-in-Machine-Learning">https://github.com/SubhamIO/Calibration-Techniques-in-Machine-Learning</a>)</p>
+
+<p><a href="https://github.com/SubhamIO/Calibration-Techniques-in-Machine-Learning">Code :</a></p>
+
 <p><a href="https://arxiv.org/pdf/1911.13273.pdf">Confidence Calibration and Predictive Uncertainty Estimation for Deep Medical Image Segmentation</a></p>
 
         <div class="section-index">
@@ -642,7 +651,7 @@ $$\hat{m}=argmin_z(y_i-z(f_i))$$</li>
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified July 14, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/75513e74698ed05ed96cbfcc17fe90d76313565e">Update _index.md (75513e7)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified July 14, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/ea6a023c83c31739cd2ad7ca5647b637dfe62e21">Update _index.md (ea6a023)</a>
 </div>
 </div>
 
@@ -655,6 +664,21 @@ $$\hat{m}=argmin_z(y_i-z(f_i))$$</li>
 </div>
 
 </body>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+  </head>
+  ...
+</html>
 
 </html>
 
