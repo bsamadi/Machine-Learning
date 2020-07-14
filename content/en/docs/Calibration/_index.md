@@ -27,7 +27,7 @@ The position of the peoints or the curve relative to the diagonal can help to in
 
   *  Other algorithms do not directly produce predictions of probabilities, and instead a prediction of probabilities must be approximated. Some examples include neural networks, support vector machines, and decision trees.
 
-![Calibration Curvs (Reliability Diagrams)](./DAL_idea.JPG)
+![Calibration Curvs (Reliability Diagrams)](./images/sphx_glr_plot_compare_calibration_0011.png)
 
 Calibration of prediction probabilities is a rescaling operation that is applied after the predictions have been made by a predictive model.
 
