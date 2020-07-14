@@ -52,6 +52,8 @@ scikit-learn:
 
 [Code :] ( https://github.com/SubhamIO/Calibration-Techniques-in-Machine-Learning)
 
+[Relaxed Softmax: Efficient Confidence Auto-Calibration for Safe Pedestrian Detection](http://www.robots.ox.ac.uk/~vedaldi/assets/pubs/neumann18relaxed.pdf)
+
 [Confidence Calibration and Predictive Uncertainty Estimation for Deep Medical Image Segmentation](https://arxiv.org/pdf/1911.13273.pdf)
 
 
