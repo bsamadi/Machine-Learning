@@ -1,11 +1,11 @@
-
 ---
+katex: true
+markup: "mmark"
 title: "Calibration"
 linkTitle: "Calibration"
 weight: 3
-date: 2017-01-05
 description: >
-  See your project in action!
+  Here's where you can find some calibration techniques.
 ---
 
 Instead of predicting class values directly for a classification problem, it can be convenient to predict the probability of an observation belonging to each possible class.
