@@ -27,7 +27,7 @@ The position of the peoints or the curve relative to the diagonal can help to in
 
   *  Other algorithms do not directly produce predictions of probabilities, and instead a prediction of probabilities must be approximated. Some examples include neural networks, support vector machines, and decision trees.
 
-![Calibration Curvs (Reliability Diagrams)](./images/sphx_glr_plot_compare_calibration_0011.png)
+![Calibration Curvs (Reliability Diagrams)](https://github.com/samarehsamadi/Machine-Learning/blob/master/content/en/docs/Calibration/images/sphx_glr_plot_compare_calibration_0011.png)
 
 Calibration of prediction probabilities is a rescaling operation that is applied after the predictions have been made by a predictive model.
 
@@ -37,13 +37,16 @@ There are two popular approaches to calibrating probabilities; they are the Plat
 
 There are two methods of Calibration:
 * Sigmoid/ Platt’s
+
 $$P_i=\frac{1}{1+exp^{Af_i+B}}$$
 
 $$f_i=f(\bold{x_i})$$ is the output of model given $$\bold{x_i}$$. A and B are parameters that will be learned.
 $$P_i$$ is the probabilty of the datapoint belonging to a class.
 
 * Isotonic 
+
 $$y_i=m(f_i)+\epsilon_i$$
+
 $$\hat{m}=argmin_z(y_i-z(f_i))$$
 
 scikit-learn: 
