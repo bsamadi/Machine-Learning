@@ -21,16 +21,16 @@
 <link rel="icon" type="image/png" href="/Machine-Learning/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/Machine-Learning/favicons/android-192x192.png" sizes="192x192">
 
-<title>Examples | Machine Learning</title><meta property="og:title" content="Examples" />
+<title>Calibration | Machine Learning</title><meta property="og:title" content="Calibration" />
 <meta property="og:description" content="See your project in action!
 " />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://samarehsamadi.github.io/Machine-Learning/docs/calibration/" />
-<meta property="og:updated_time" content="2020-07-14T07:35:21-07:00" /><meta property="og:site_name" content="Machine Learning" />
-<meta itemprop="name" content="Examples">
+<meta property="og:updated_time" content="2020-07-14T08:26:06-07:00" /><meta property="og:site_name" content="Machine Learning" />
+<meta itemprop="name" content="Calibration">
 <meta itemprop="description" content="See your project in action!
 "><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Examples"/>
+<meta name="twitter:title" content="Calibration"/>
 <meta name="twitter:description" content="See your project in action!
 "/>
 
@@ -205,7 +205,7 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/Machine-Learning/docs/calibration/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Examples</a>
+    <a  href="/Machine-Learning/docs/calibration/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Calibration</a>
   </li>
   <ul>
     <li class="collapse show" id="machine-learningdocscalibration">
@@ -436,7 +436,7 @@
 
 
 <a href="https://github.com/samarehsamadi/Machine-Learning/edit/master/content/en/docs/Calibration/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/samarehsamadi/Machine-Learning/issues/new?title=Examples" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/samarehsamadi/Machine-Learning/issues/new?title=Calibration" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 </div>
 
@@ -470,7 +470,7 @@
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://samarehsamadi.github.io/Machine-Learning/docs/calibration/">Examples</a>
+	<a href="https://samarehsamadi.github.io/Machine-Learning/docs/calibration/">Calibration</a>
 </li>
 
 	</ol>
@@ -478,17 +478,57 @@
 
             
 <div class="td-content">
-	<h1>Examples</h1>
+	<h1>Calibration</h1>
         <div class="lead">See your project in action!</div>
 	
-	
-
-<div class="pageinfo pageinfo-primary">
-<p>This is a placeholder page that shows you how to use this template site.</p>
-
-</div>
-
-<p>Do you have any example <strong>applications</strong> or <strong>code</strong> for your users in your repo or elsewhere? Link to your examples here.</p>
+	<p>Instead of predicting class values directly for a classification problem, it can be convenient to predict the probability of an observation belonging to each possible class.</p>
+<p>Predicting probabilities allows some flexibility including deciding how to interpret the probabilities, presenting predictions with uncertainty, and providing more nuanced ways to evaluate the skill of the model.</p>
+<p>Predicted probabilities that match the expected distribution of probabilities for each class are referred to as calibrated.</p>
+<ul>
+<li>Reliability Diagrams (Calibration Curves)
+A reliability diagram is a line plot of the relative frequency of what was observed (y-axis) versus the predicted probability frequency  (x-axis).</li>
+</ul>
+<p>The position of the points or the curve relative to the diagonal can help to interpret the probabilities; for example:</p>
+<ul>
+<li>
+<p>Below the diagonal: The model has over-forecast; the probabilities are too large.</p>
+</li>
+<li>
+<p>Above the diagonal: The model has under-forecast; the probabilities are too small.</p>
+</li>
+<li>
+<p>importatnt</p>
+<ul>
+<li>
+<p>Some algorithms are fit in such a way that their predicted probabilities are already calibrated. Without going into details why, logistic regression is one such example.</p>
+</li>
+<li>
+<p>Other algorithms do not directly produce predictions of probabilities, and instead a prediction of probabilities must be approximated. Some examples include neural networks, support vector machines, and decision trees.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Calibration of prediction probabilities is a rescaling operation that is applied after the predictions have been made by a predictive model.</p>
+<p>There are two popular approaches to calibrating probabilities; they are the Platt Scaling and Isotonic Regression.</p>
+<p><a href="https://machinelearningmastery.com/calibrated-classification-model-in-scikit-learn/">here</a></p>
+<p>There are two methods of Calibration:</p>
+<ul>
+<li>Sigmoid/ Platt’s
+$$P_i=\frac{1}{1+exp^{Af_i+B}}$$</li>
+</ul>
+<p>$$f_i=f(\bold{x_i})$$ is the output of model given $$\bold{x_i}$$. A and B are parameters that will be learned.
+$$P_i$$ is the probabilty of the datapoint belonging to a class.</p>
+<ul>
+<li>Isotonic
+$$y_i=m(f_i)+\epsilon_i$$
+$$\hat{m}=argmin_z(y_i-z(f_i))$$</li>
+</ul>
+<p>scikit-learn:</p>
+<ul>
+<li>calibration_curve()</li>
+<li>CalibratedClassifierCV</li>
+</ul>
+<p><a href="https://arxiv.org/pdf/1911.13273.pdf">Confidence Calibration and Predictive Uncertainty Estimation for Deep Medical Image Segmentation</a></p>
 
         <div class="section-index">
     
@@ -600,7 +640,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified July 14, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/7da4b9cea34d194ca1535936bd40fee1b6a94e00">Rename content/en/docs/Examples/_index.md to content/en/docs/Calibration/_index.md (7da4b9c)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified July 14, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/da2ccd22108f08f37930d07494f0379bb6578008">Update _index.md (da2ccd2)</a>
 </div>
 </div>
 
