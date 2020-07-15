@@ -1519,6 +1519,20 @@ This is a warning with a title.
     </item>
     
     <item>
+      <title>Docs: Segmentation</title>
+      <link>https://samarehsamadi.github.io/Machine-Learning/docs/segmentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://samarehsamadi.github.io/Machine-Learning/docs/segmentation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S1361841519300623&#34;&gt;Accurate and robust deep learning-based segmentation of the prostate clinical target volume in ultrasound images&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Vanila GAN</title>
       <link>https://samarehsamadi.github.io/Machine-Learning/docs/tutorials/tutorial2/</link>
       <pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate>
