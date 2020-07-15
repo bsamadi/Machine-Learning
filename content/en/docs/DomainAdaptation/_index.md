@@ -170,24 +170,16 @@ softmax cross entropy. The objective is as follows:
 
 $$ min_{G,F1,F2}L(\bold{X}_s, \bold{Y}_s)$$
 
-[Step B]
 
 ![Step B](DA_StepB.JPG)
 
-[Step C]
 
 ![Step C](DA_StepC.JPG)
 
-* **What is it good for?**: What types of problems does your project solve? What are the benefits of using it?
+## [Learning to Learn Single Domain Generalization](https://arxiv.org/pdf/2003.13216.pdf)
+* idea: adversarial domain augmentation to solve this Outof-Distribution (OOD) generalization problem -> cast the model
+training in a meta-learning scheme and use a Wasserstein
+Auto-Encoder (WAE) to relax the widely used worst-case
+constraint
 
-* **What is it not good for?**: For example, point out situations that might intuitively seem suited for your project, but aren't for some reason. Also mention known limitations, scaling issues, or anything else that might let your users know if the project is not for them.
-
-* **What is it *not yet* good for?**: Highlight any useful features that are coming soon.
-
-## Where should I go next?
-
-Give your users next steps from the Overview. For example:
-
-* [Getting Started](/getting-started/): Get started with $project
-* [Examples](/examples/): Check out some example code!
-
+![Adversarial Domain Augmentation]()
