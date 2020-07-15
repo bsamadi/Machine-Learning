@@ -196,3 +196,4 @@ $$D_e$$: could be Maximum Mean Discrepancy (MMD) or GANs
 
 $$L_{relax}=\| x^+ - V(x^+) \|^2$$
 
+ghg
