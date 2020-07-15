@@ -182,4 +182,4 @@ training in a meta-learning scheme and use a Wasserstein
 Auto-Encoder (WAE) to relax the widely used worst-case
 constraint
 
-![Adversarial Domain Augmentation]()
+![Adversarial Domain Augmentation](ADA.jpg)
