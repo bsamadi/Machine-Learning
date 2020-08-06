@@ -85,6 +85,7 @@ private to each domain before aligning the latent feature
 distributions.
 
 ## [Side tunning](https://arxiv.org/pdf/1912.13503.pdf)
+
 ![Idea](SideTuning.jpg)
 
 ## [Adversarial-Learned Loss for Domain Adaptation (ALDA)](https://arxiv.org/pdf/2001.01046.pdf)
