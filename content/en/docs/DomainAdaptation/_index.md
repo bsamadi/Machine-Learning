@@ -201,3 +201,21 @@ $$D_e$$: could be Maximum Mean Discrepancy (MMD) or GANs
 $$L_{relax}=\| x^+ - V(x^+) \|^2$$
 
 ghg
+
+# Domain adaptation and U-net
+##
+
+## Unet-GAN
+[The Domain Shift Problem of Medical Image
+Segmentation and Vendor-Adaptation by Unet-GAN](https://arxiv.org/ftp/arxiv/papers/1910/1910.13681.pdf)
+![Network Structure](UnetandCycleGAN.JPG)
+![Idea](UnetCycleGAN.JPG)
+
+1. Firstly, the Unet is trained by data from the source domain with sufficient
+annotation, and the performance in the test set from the same source domain is
+guaranteed to be up to the state-of-the-art.
+2. The generators �:, �; and discriminators �:,�; in Unet-GAN are trained
+alternately using unannotated data from both source and target domains, using the
+loss function defined in the previous section, integrating the Unet features.
+3. Finally, data from the target domain are first translated to the source domain by �:,
+and then fed to the trained Unet for segmentation.
