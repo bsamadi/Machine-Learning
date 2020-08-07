@@ -204,6 +204,10 @@ ghg
 
 ## Semi-supervised Domain Adaptation via Minimax Entropy
 ![Idea](Entropy.JPG)
+
+## [Unified Deep Supervised Domain Adaptation and Generalization](http://vision.csee.wvu.edu/publications/motiianPAD17iccv.pdf)
+![Idea](UDSDA.JPG)
+
 # [Domain adaptation and U-net](https://openaccess.thecvf.com/content_ICCV_2019/papers/Saito_Semi-Supervised_Domain_Adaptation_via_Minimax_Entropy_ICCV_2019_paper.pdf)
 
 ## Unet-GAN
