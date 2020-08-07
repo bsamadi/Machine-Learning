@@ -208,6 +208,8 @@ ghg
 ## [Unified Deep Supervised Domain Adaptation and Generalization](http://vision.csee.wvu.edu/publications/motiianPAD17iccv.pdf)
 ![Idea](UDSDA.JPG)
 
+## [Unsupervised domain adaptation formedical imaging segmentation with self-ensembling](https://www.researchgate.net/publication/328997307_Unsupervised_domain_adaptation_for_medical_imaging_segmentation_with_self-ensembling)
+
 # [Domain adaptation and U-net](https://openaccess.thecvf.com/content_ICCV_2019/papers/Saito_Semi-Supervised_Domain_Adaptation_via_Minimax_Entropy_ICCV_2019_paper.pdf)
 
 ## Unet-GAN
