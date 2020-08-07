@@ -226,3 +226,8 @@ alternately using unannotated data from both source and target domains, using th
 loss function defined in the previous section, integrating the Unet features.
 3. Finally, data from the target domain are first translated to the source domain by �:,
 and then fed to the trained Unet for segmentation.
+
+## [A DOMAIN-ADAPTIVE TWO-STREAM U-NET FOR ELECTRON MICROSCOPY IMAGE
+SEGMENTATION](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8363602)
+
+![Idea](UNetDA.JPG)
