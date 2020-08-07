@@ -202,13 +202,14 @@ $$L_{relax}=\| x^+ - V(x^+) \|^2$$
 
 ghg
 
-# Domain adaptation and U-net
-##
+## Semi-supervised Domain Adaptation via Minimax Entropy
+![Idea](Entropy.JPG)
+# [Domain adaptation and U-net](https://openaccess.thecvf.com/content_ICCV_2019/papers/Saito_Semi-Supervised_Domain_Adaptation_via_Minimax_Entropy_ICCV_2019_paper.pdf)
 
 ## Unet-GAN
 [The Domain Shift Problem of Medical Image
 Segmentation and Vendor-Adaptation by Unet-GAN](https://arxiv.org/ftp/arxiv/papers/1910/1910.13681.pdf)
-![Network Structure](UnetandCycleGAN.JPG)
+![Network Structure](UnetandCycleGAN.JPG.JPG)
 ![Idea](UnetCycleGAN.JPG)
 
 1. Firstly, the Unet is trained by data from the source domain with sufficient
