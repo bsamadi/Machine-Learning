@@ -692,6 +692,28 @@ constraint</li>
 
 <p>ghg</p>
 
+<h1 id="domain-adaptation-and-unet">Domain adaptation and U-net</h1>
+
+<p>##</p>
+
+<h2 id="unetgan">Unet-GAN</h2>
+
+<p><a href="https://arxiv.org/ftp/arxiv/papers/1910/1910.13681.pdf">The Domain Shift Problem of Medical Image
+Segmentation and Vendor-Adaptation by Unet-GAN</a>
+<figure><img src="UnetandCycleGAN.JPG" alt="Network Structure"></figure>
+<figure><img src="UnetCycleGAN.JPG" alt="Idea"></figure></p>
+
+<ol>
+<li>Firstly, the Unet is trained by data from the source domain with sufficient
+annotation, and the performance in the test set from the same source domain is
+guaranteed to be up to the state-of-the-art.</li>
+<li>The generators �:, �; and discriminators �:,�; in Unet-GAN are trained
+alternately using unannotated data from both source and target domains, using the
+loss function defined in the previous section, integrating the Unet features.</li>
+<li>Finally, data from the target domain are first translated to the source domain by �:,
+and then fed to the trained Unet for segmentation.</li>
+</ol>
+
         <div class="section-index">
     
     
@@ -802,7 +824,7 @@ constraint</li>
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified August 6, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/3d800b68f8a0e20af20c505195a35f2e3bcdfa16">Update _index.md (3d800b6)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified August 6, 2020: <a  href="https://github.com/samarehsamadi/Machine-Learning/commit/cc3782c3e1f3c7d4f506f2ef768dd114e11504ba">Update _index.md (cc3782c)</a>
 </div>
 </div>
 
