@@ -25,9 +25,12 @@ of DNNs [1, 44].
 * Small-loss selection
 
 The stateof-the-art approaches are:
+  <img src="twoclassifiers.JPG"
+     alt="Network"
+     style="float: left; margin-right: 10px;" />
 * Decoupling
-
-* Co-teaching+
+* [Co-teaching](https://arxiv.org/pdf/1804.06872.pdf)
+* [Co-teaching+](https://arxiv.org/pdf/1901.04215.pdf)
 
 * [JoCoR (Joint Training with Co-Regularization)](https://arxiv.org/pdf/2003.02752.pdf)
 
