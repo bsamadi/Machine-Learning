@@ -25,7 +25,7 @@ of DNNs [1, 44].
 * Small-loss selection
 
 The state-of-the-art approaches are:
-<img src="twoclassifiers.JPG"
+<img src="twoclassifiers.jpg"
      alt="state-of-the-art"
      style="float: left; margin-right: 10px;" />
 * Decoupling
