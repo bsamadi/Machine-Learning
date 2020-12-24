@@ -7,7 +7,7 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://samarehsamadi.github.io/Machine-Learning/docs/noisylabel/index.xml">
+<link rel="alternate" type="application/rss&#43;xml" href="https://samarehsamadi.github.io/Machine-Learning/docs/sampling/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,17 +21,17 @@
 <link rel="icon" type="image/png" href="/Machine-Learning/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/Machine-Learning/favicons/android-192x192.png" sizes="192x192">
 
-<title>Noisy Label | Machine Learning</title><meta property="og:title" content="Noisy Label" />
-<meta property="og:description" content="Some methods to tackle noisy label problem are reviewed here.
+<title>Sampling | Machine Learning</title><meta property="og:title" content="Sampling" />
+<meta property="og:description" content="Different type of sampling.
 " />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://samarehsamadi.github.io/Machine-Learning/docs/noisylabel/" />
+<meta property="og:url" content="https://samarehsamadi.github.io/Machine-Learning/docs/sampling/" />
 <meta property="og:site_name" content="Machine Learning" />
-<meta itemprop="name" content="Noisy Label">
-<meta itemprop="description" content="Some methods to tackle noisy label problem are reviewed here.
+<meta itemprop="name" content="Sampling">
+<meta itemprop="description" content="Different type of sampling.
 "><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Noisy Label"/>
-<meta name="twitter:description" content="Some methods to tackle noisy label problem are reviewed here.
+<meta name="twitter:title" content="Sampling"/>
+<meta name="twitter:description" content="Different type of sampling.
 "/>
 
 
@@ -182,10 +182,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/Machine-Learning/docs/sampling/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Sampling</a>
+    <a  href="/Machine-Learning/docs/sampling/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Sampling</a>
   </li>
   <ul>
-    <li class="collapse " id="machine-learningdocssampling">
+    <li class="collapse show" id="machine-learningdocssampling">
       
       
       
@@ -205,10 +205,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/Machine-Learning/docs/noisylabel/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Noisy Label</a>
+    <a  href="/Machine-Learning/docs/noisylabel/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Noisy Label</a>
   </li>
   <ul>
-    <li class="collapse show" id="machine-learningdocsnoisylabel">
+    <li class="collapse " id="machine-learningdocsnoisylabel">
       
       
       
@@ -441,23 +441,13 @@
 
 
 
-<a href="https://github.com/samarehsamadi/Machine-Learning/edit/master/content/en/docs/NoisyLabel/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/samarehsamadi/Machine-Learning/issues/new?title=Noisy%20Label" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/samarehsamadi/Machine-Learning/edit/master/content/en/docs/Sampling/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/samarehsamadi/Machine-Learning/issues/new?title=Sampling" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 </div>
 
 
 
-
-
-
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#jocor">JoCoR</a></li>
-    <li><a href="#cleanlabhttpsgithubcomcgnorthcuttcleanlab"><a href="https://github.com/cgnorthcutt/cleanlab">CleanLab</a></a></li>
-    <li><a href="#inpaintinghttpsarxivorgpdf191011908pdf"><a href="https://arxiv.org/pdf/1910.11908.pdf">inpainting</a></a></li>
-  </ul>
-</nav>
 
 
 
@@ -484,7 +474,7 @@
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://samarehsamadi.github.io/Machine-Learning/docs/noisylabel/">Noisy Label</a>
+	<a href="https://samarehsamadi.github.io/Machine-Learning/docs/sampling/">Sampling</a>
 </li>
 
 	</ol>
@@ -492,102 +482,10 @@
 
             
 <div class="td-content">
-	<h1>Noisy Label</h1>
-        <div class="lead">Some methods to tackle noisy label problem are reviewed here.</div>
+	<h1>Sampling</h1>
+        <div class="lead">Different type of sampling.</div>
 	
-	
-
-<div class="pageinfo pageinfo-primary">
-<p>Note: This page is a mixed up of different references. Networks and algorithms and some texts are taken from the references.</p>
-
-</div>
-
-<p>Deep Learning with noisy labels is a practically challenging problem in weakly supervised learning.</p>
-<ul>
-<li>
-<p>Annotation companies choose some alternating methods such as crowdsourcing [39, 43] and online queries [3] to
-improve labelling efficiency. Unfortunately, these methods
-usually suffer from unavoidable noisy labels, which have
-been proven to lead to noticeable decrease in performance
-of DNNs [1, 44].</p>
-</li>
-<li>
-<p>estimate the latent noisy transition matrix [21, 24, 32].</p>
-</li>
-<li>
-<p>training on selected or weighted samples, e.g., Mentornet [16], gradient-based reweight <a href="https://arxiv.org/pdf/1803.09050.pdf">ref</a> and Co-teaching [12].</p>
-</li>
-<li>
-<p>Small-loss selection</p>
-</li>
-</ul>
-<p>The state-of-the-art approaches are:
-<img src="twoclassifiers.jpg"
-alt="state-of-the-art"
-style="float: left; margin-right: 10px;" /></p>
-<ul>
-<li>
-<p>Decoupling</p>
-</li>
-<li>
-<p><a href="https://arxiv.org/pdf/1804.06872.pdf">Co-teaching</a></p>
-</li>
-<li>
-<p><a href="https://arxiv.org/pdf/1901.04215.pdf">Co-teaching+</a></p>
-</li>
-<li>
-<p><a href="https://arxiv.org/pdf/2003.02752.pdf">JoCoR (Joint Training with Co-Regularization)</a></p>
-</li>
-</ul>
-<p>Other deep learning methods. In addition to the aforementioned approaches, there are some other deep learning solutions [13, 17] to deal with noisy labels, including pseudo-label based [35, 40] and robust loss based approaches [28, 46]. For pseudo-label based approaches, Joint
-optimization [35] learns network parameters and infers the
-ground-true labels simultaneously. PENCIL [40] adopts label probability distributions to supervise network learning
-and to update these distributions through back-propagation
-end-to-end in each epoch. For robust loss based approaches,
-F-correct[28] proposes a robust risk minimization method
-to learn neural networks for multi-class classification by estimating label corruption probabilities. GCE [46] combines
-the advantages of the mean absolute loss and the cross entropy loss to obtain a better loss function and presents a theoretical analysis of the proposed loss functions in the context of noisy labels.</p>
-<h2 id="jocor">JoCoR</h2>
-<ul>
-<li>
-<p>Paper:</p>
-<ul>
-<li>
-<p>Title: Combating Noisy Labels by Agreement: A Joint Training Method with Co-Regularization</p>
-</li>
-<li>
-<p>Datasets: MNIST, CIFAR-10, CIFAR-100 and Clothing1M</p>
-</li>
-<li>
-<p>Main idea: To encourage two different classifiers
-to make predictions closer to each other by explicit regularization.</p>
-</li>
-<li>
-<p>Network
-<img src="JoCor.JPG"
-alt="Network"
-style="float: left; margin-right: 10px;" /></p>
-</li>
-<li>
-<p>Equations</p>
-</li>
-</ul>
-<p><a href="https://www.codecogs.com/eqnedit.php?latex=l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" target="_blank"><img       src="https://latex.codecogs.com/gif.latex?l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)&plus;\lambda&space;*&space;l_{con}(\bold{x}_i,y_i)" title="l(x_i)=(1-\lambda)*l_{sup}(\bold{x}_i,y_i)+\lambda * l_{con}(\bold{x}_i,y_i)" /></a></p>
-<p><a href="https://www.codecogs.com/eqnedit.php?latex=l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)&plus;l_{C2}(\bold{x}_i,y_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)&plus;l_{C2}(\bold{x}_i,y_i)" title="l_{sup}(\bold{x}_i,y_i)=l_{C1}(\bold{x}_i,y_i)+l_{C2}(\bold{x}_i,y_i)" /></a></p>
-<p><a href="https://www.codecogs.com/eqnedit.php?latex=l_{con}(\bold{x}_i,y_i)=D_{KL}(\bold{p_1}||\bold{p_2})&plus;D_{KL}(\bold{p_2}||\bold{p_1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l_{con}(\bold{x}_i,y_i)=D_{KL}(\bold{p_1}||\bold{p_2})&plus;D_{KL}(\bold{p_2}||\bold{p_1})" title="l_{con}(\bold{x}_i,y_i)=D_{KL}(\bold{p_1}||\bold{p_2})+D_{KL}(\bold{p_2}||\bold{p_1})" /></a></p>
-</li>
-</ul>
-<p>it aims to reduce the diversity of two networks during training. Specifically, it uses two networks to make predictions on
-the same mini-batch data and calculate a joint loss with
-Co-Regularization for each training example.</p>
-<pre><code>* Algorithm
-
-![Algorithm](JoCor_Algorithm.JPG)
-</code></pre>
-<h2 id="cleanlabhttpsgithubcomcgnorthcuttcleanlab"><a href="https://github.com/cgnorthcutt/cleanlab">CleanLab</a></h2>
-<p>Where can your user find your project code? How can they install it (binaries, installable package, build from source)? Are there multiple options/versions they can install and how should they choose the right one for them?</p>
-<h2 id="inpaintinghttpsarxivorgpdf191011908pdf"><a href="https://arxiv.org/pdf/1910.11908.pdf">inpainting</a></h2>
-<p><a href="https://arxiv.org/pdf/1611.09969.pdf">2</a></p>
+	<h2 id="basic-samplinghttpstowardsdatasciencecomthe5samplingalgorithmseverydatascientistneedtoknow43c7bc11d17c"><a href="https://towardsdatascience.com/the-5-sampling-algorithms-every-data-scientist-need-to-know-43c7bc11d17c">Basic Sampling</a></h2>
 
         <div class="section-index">
     
@@ -714,6 +612,21 @@ Co-Regularization for each training example.</p>
 </div>
 
 </body>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+  </head>
+  ...
+</html>
 
 </html>
 
