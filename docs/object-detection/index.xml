@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Machine Learning – </title>
+    <title>Machine Learning – Calibration</title>
     <link>https://samarehsamadi.github.io/Machine-Learning/docs/object-detection/</link>
-    <description>Recent content on Machine Learning</description>
+    <description>Recent content in Calibration on Machine Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://samarehsamadi.github.io/Machine-Learning/docs/object-detection/index.xml" rel="self" type="application/rss+xml" />
