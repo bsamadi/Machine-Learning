@@ -1,8 +1,8 @@
 ---
 katex: true
 markup: "mmark"
-title: "Calibration"
-linkTitle: "Calibration"
+title: "Object Detection"
+linkTitle: "Object Detection"
 weight: 3
 description: >
   Here's where you can find some Object Detection.
