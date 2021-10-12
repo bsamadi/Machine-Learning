@@ -10,13 +10,13 @@ description: >
 
 [Yolov5](https://pytorch.org/hub/ultralytics_yolov5)
 
-<img src="Yolov5.png"
+<img src="Yolov5.PNG"
    alt="Network"
    style="float: left; margin-right: 10px;" />
-<img src="Yolov5_2.png"
+<img src="Yolov5_2.PNG"
    alt="Network"
    style="float: left; margin-right: 10px;" />
-<img src="Yolov5_3.png"
+<img src="Yolov5_3.PNG"
    alt="Network"
    style="float: left; margin-right: 10px;" />
 
