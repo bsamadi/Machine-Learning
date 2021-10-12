@@ -17,10 +17,15 @@ jobs:
     - name: Checkout submodules
       uses: textbook/git-checkout-submodule-action@master
     
+    - name: install pandoc
+      run: |
+           wget https://github.com/jgm/pandoc/releases/download/2.10/pandoc-2.10-1-amd64.deb
+           sudo dpkg -i pandoc-2.10-1-amd64.deb
+ 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-        hugo-version: '0.71.1'
+        hugo-version: '0.88.1'
         extended: true
           
     - name: Build
@@ -28,9 +33,16 @@ jobs:
        npm install -D --save autoprefixer
        npm install -D --save postcss-cli
        hugo
-
-    - name: Deploy
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
+        commit_message: 'auto commit [ci skip]'
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3.7.3
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        publish_dir: ./public
+        external_repository: samarehsamadi.github.io
+        publish_branch: master
