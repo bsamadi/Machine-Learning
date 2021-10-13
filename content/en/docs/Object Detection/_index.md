@@ -79,6 +79,7 @@ yield a “no object” (∅) class prediction.
 <img src="DETR.PNG"
    alt="Network"
    style="float: left; margin-right: 10px;" />
+   
 VoxelNet
 VoteNet
 PixelRCNN
