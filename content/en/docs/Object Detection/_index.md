@@ -76,7 +76,7 @@ a common CNN with a transformer architecture. During training, bipartite matchin
 uniquely assigns predictions with ground truth boxes. Prediction with no match should
 yield a “no object” (∅) class prediction.
 
-<img src="DETR.PNG"
+<img src="DETR.png"
    alt="Network"
    style="float: left; margin-right: 10px;" />
 
