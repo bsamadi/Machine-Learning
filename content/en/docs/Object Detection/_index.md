@@ -79,7 +79,15 @@ yield a “no object” (∅) class prediction.
 <img src="DETR.PNG"
    alt="Network"
    style="float: left; margin-right: 10px;" />
-   
+
+Object detection set prediction loss
+
+<img src="DETR_loss.PNG"
+   alt="Network"
+   style="float: left; margin-right: 10px;" />
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=L_{box}(b_i,\hat{b}_{\sigma(i)})= \lambda_{iou}L_{iou}(b_i,\hat{b}_{\sigma(i)})+ \lambda_{L1} \| b_i-\hat{b}_{\sigma(i)} \|" target="_blank"></a>
+
 VoxelNet
 VoteNet
 PixelRCNN
