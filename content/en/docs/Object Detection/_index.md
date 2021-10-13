@@ -65,7 +65,17 @@ this work is at : https:// github.com/WongKinYiu/yolor.
 <img src="YOLOR_Compare.PNG"
    alt="Network"
    style="float: left; margin-right: 10px;" />
-   
+
+[DETR](https://arxiv.org/pdf/2005.12872v3.pdf)
+DEtection TRansformer (DETR)
+DETR directly predicts (in parallel) the final set of detections by combining
+a common CNN with a transformer architecture. During training, bipartite matching
+uniquely assigns predictions with ground truth boxes. Prediction with no match should
+yield a “no object” (∅) class prediction.
+
+<img src="DETR.PNG"
+   alt="Network"
+   style="float: left; margin-right: 10px;" />
 VoxelNet
 VoteNet
 PixelRCNN
