@@ -46,6 +46,7 @@ The field of object detection is not as new as it may seem. In fact, object dete
    style="float: left; margin-right: 10px;" />
 
 [YOLOR](https://arxiv.org/pdf/2105.04206v1.pdf)
+
 A unified network is proposed to
 encode implicit knowledge and explicit knowledge together,
 just like the human brain can learn knowledge from normal
@@ -67,7 +68,9 @@ this work is at : https:// github.com/WongKinYiu/yolor.
    style="float: left; margin-right: 10px;" />
 
 [DETR](https://arxiv.org/pdf/2005.12872v3.pdf)
+
 DEtection TRansformer (DETR)
+
 DETR directly predicts (in parallel) the final set of detections by combining
 a common CNN with a transformer architecture. During training, bipartite matching
 uniquely assigns predictions with ground truth boxes. Prediction with no match should
