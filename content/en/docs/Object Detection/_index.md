@@ -29,9 +29,11 @@ The field of object detection is not as new as it may seem. In fact, object dete
     * RetinaNet (2017)
     * YOLOv3 (2018)
     * YOLOv4 (2020)
+    * YOLOv5
+    * YOLOX
     * YOLOR (2021)
 
-[Yolov5](https://pytorch.org/hub/ultralytics_yolov5)
+[YOLOv5](https://pytorch.org/hub/ultralytics_yolov5)
 
 <img src="Yolov5.PNG"
    alt="Network"
@@ -43,6 +45,27 @@ The field of object detection is not as new as it may seem. In fact, object dete
    alt="Network"
    style="float: left; margin-right: 10px;" />
 
+[YOLOR](https://arxiv.org/pdf/2105.04206v1.pdf)
+A unified network is proposed to
+encode implicit knowledge and explicit knowledge together,
+just like the human brain can learn knowledge from normal
+learning as well as subconsciousness learning. The unified
+network can generate a unified representation to simultaneously serve various tasks. 
+
+The results demonstrate
+that when implicit knowledge is introduced into the neural
+network, it benefits the performance of all tasks. We further
+analyze the implicit representation learnt from the proposed
+unified network, and it shows great capability on catching
+the physical meaning of different tasks. 
+
+The source code of
+this work is at : https:// github.com/WongKinYiu/yolor.
+
+<img src="YOLOR_Compare.PNG"
+   alt="Network"
+   style="float: left; margin-right: 10px;" />
+   
 VoxelNet
 VoteNet
 PixelRCNN
