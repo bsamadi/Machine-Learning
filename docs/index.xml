@@ -1541,6 +1541,8 @@ alt=&#34;Network&#34;
 style=&#34;float: left; margin-right: 10px;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Transformer Encoder
 L layers, multi-headed self-attention (MSA), ponit-wise MLP, Layer Norm (LN)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.codecogs.com/eqnedit.php?latex=a_{i-1} = MSA(LN(z_{i-1}))+z_{i-1}&#34; target=&#34;_blank&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://www.codecogs.com/eqnedit.php?latex=z_{i} = MLP(LN(a_{i-1}))+a_{i-1}&#34; target=&#34;_blank&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
