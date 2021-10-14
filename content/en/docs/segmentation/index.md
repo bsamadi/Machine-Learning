@@ -19,3 +19,8 @@ and throughout the network. We build on the recent Vision
 Transformer (ViT) and extend it to semantic segmentation.
 
 However, the modeling of global interactions comes at a quadratic cost which makes such methods prohibitively expensive when applied to raw image pixels [11].
+
+
+<img src="Segmenter.PNG"
+   alt="Network"
+   style="float: left; margin-right: 10px;" />
