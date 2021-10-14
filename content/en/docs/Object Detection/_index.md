@@ -86,7 +86,7 @@ Object detection set prediction loss
    alt="Network"
    style="float: left; margin-right: 10px;" />
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=L_{box}(b_i,\hat{b}_{\sigma(i)})= \lambda_{iou}L_{iou}(b_i,\hat{b}_{\sigma(i)})+ \lambda_{L1} \| b_i-\hat{b}_{\sigma(i)} \|" target="_blank"></a>
+<img src="https://latex.codecogs.com/svg.image?L_{box}(b_i,\hat{b}_{\sigma(i)})=&space;\lambda_{iou}L_{iou}(b_i,\hat{b}_{\sigma(i)})&plus;&space;\lambda_{L1}&space;\|&space;b_i-\hat{b}_{\sigma(i)}&space;\|" title="L_{box}(b_i,\hat{b}_{\sigma(i)})= \lambda_{iou}L_{iou}(b_i,\hat{b}_{\sigma(i)})+ \lambda_{L1} \| b_i-\hat{b}_{\sigma(i)} \|" />
 
 VoxelNet
 VoteNet
