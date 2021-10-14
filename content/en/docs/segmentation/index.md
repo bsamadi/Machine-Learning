@@ -40,3 +40,13 @@ The self-attention mechanism:
 Our model is
 trained end-to-end with a per-pixel cross-entropy loss. At
 inference time, argmax is applied after upsampling to obtain a single class per pixel.
+
+
+<img src="Segmenter_compare_chart.PNG"
+   alt="Network"
+   style="float: left; margin-right: 10px;" />
+   
+ 
+<img src="Segmenter_compare_table.PNG"
+   alt="Network"
+   style="float: left; margin-right: 10px;" />
