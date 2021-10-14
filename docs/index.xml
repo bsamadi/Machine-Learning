@@ -1541,8 +1541,8 @@ alt=&#34;Network&#34;
 style=&#34;float: left; margin-right: 10px;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Transformer Encoder
 L layers, multi-headed self-attention (MSA), ponit-wise MLP, Layer Norm (LN)&lt;/p&gt;
-&lt;p&gt;&amp;lt;a href=&amp;ldquo;&lt;a href=&#34;https://www.codecogs.com/eqnedit.php?latex=a_%7Bi-1%7D&#34;&gt;https://www.codecogs.com/eqnedit.php?latex=a_{i-1}&lt;/a&gt; = MSA(LN(z_{i-1}))+z_{i-1}/&amp;gt;&lt;/a&gt;
-&amp;lt;a href=&amp;ldquo;&lt;a href=&#34;https://www.codecogs.com/eqnedit.php?latex=z_%7Bi%7D&#34;&gt;https://www.codecogs.com/eqnedit.php?latex=z_{i}&lt;/a&gt; = MLP(LN(a_{i-1}))+a_{i-1}/&amp;gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;a href=&amp;ldquo;&lt;a href=&#34;https://www.codecogs.com/eqnedit.php?latex=a_%7Bi-1%7D&#34;&gt;https://www.codecogs.com/eqnedit.php?latex=a_{i-1}&lt;/a&gt; = MSA(LN(z_{i-1}))+z_{i-1}/&amp;gt;
+&amp;lt;a href=&amp;ldquo;&lt;a href=&#34;https://www.codecogs.com/eqnedit.php?latex=z_%7Bi%7D&#34;&gt;https://www.codecogs.com/eqnedit.php?latex=z_{i}&lt;/a&gt; = MLP(LN(a_{i-1}))+a_{i-1}/&amp;gt;&lt;/p&gt;
 
       </description>
     </item>
