@@ -28,5 +28,5 @@ However, the modeling of global interactions comes at a quadratic cost which mak
 Transformer Encoder
 L layers, multi-headed self-attention (MSA), ponit-wise MLP, Layer Norm (LN)
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=a_{i-1} = MSA(LN(z_{i-1}))+z_{i-1}/>
-<a href="https://www.codecogs.com/eqnedit.php?latex=z_{i} = MLP(LN(a_{i-1}))+a_{i-1}/>
+<img src="https://latex.codecogs.com/svg.image?a_{i-1}&space;=&space;MSA(LN(z_{i-1}))&plus;z_{i-1}" title="a_{i-1} = MSA(LN(z_{i-1}))+z_{i-1}" />
+<img src="https://latex.codecogs.com/svg.image?z_{i}&space;=&space;MLP(LN(a_{i-1}))&plus;a_{i-1}" title="z_{i} = MLP(LN(a_{i-1}))+a_{i-1}" />
