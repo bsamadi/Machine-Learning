@@ -24,3 +24,6 @@ However, the modeling of global interactions comes at a quadratic cost which mak
 <img src="Segmenter.PNG"
    alt="Network"
    style="float: left; margin-right: 10px;" />
+
+Transformer Encoder
+L layers, multi-headed self-attention (MSA), ponit-wise MLP, Layer Norm (LN)
