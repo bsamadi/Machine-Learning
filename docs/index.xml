@@ -1549,6 +1549,12 @@ L layers, multi-headed self-attention (MSA), ponit-wise MLP, Layer Norm (LN)&lt;
 &lt;p&gt;Our model is
 trained end-to-end with a per-pixel cross-entropy loss. At
 inference time, argmax is applied after upsampling to obtain a single class per pixel.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Segmenter_compare_chart.PNG&#34;
+alt=&#34;Network&#34;
+style=&#34;float: left; margin-right: 10px;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Segmenter_compare_table.PNG&#34;
+alt=&#34;Network&#34;
+style=&#34;float: left; margin-right: 10px;&#34; /&gt;&lt;/p&gt;
 
       </description>
     </item>
