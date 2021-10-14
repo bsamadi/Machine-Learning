@@ -1545,7 +1545,7 @@ L layers, multi-headed self-attention (MSA), ponit-wise MLP, Layer Norm (LN)&lt;
 &lt;img src=&#34;https://latex.codecogs.com/svg.image?z_{i}&amp;space;=&amp;space;MLP(LN(a_{i-1}))&amp;plus;a_{i-1}&#34; title=&#34;z_{i} = MLP(LN(a_{i-1}))+a_{i-1}&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The self-attention mechanism:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://latex.codecogs.com/svg.image?\boldsymbol{Q}&amp;space;\in&amp;space;\mathbb{R}^{N\times&amp;space;d},&amp;space;\boldsymbol{K}&amp;space;\in&amp;space;\mathbb{R}^{N\times&amp;space;d},&amp;space;\boldsymbol{V}&amp;space;\in&amp;space;\mathbb{R}^{N\times&amp;space;d}&#34; title=&#34;\boldsymbol{Q} \in \mathbb{R}^{N\times d}, \boldsymbol{K} \in \mathbb{R}^{N\times d}, \boldsymbol{V} \in \mathbb{R}^{N\times d}&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://latex.codecogs.com/svg.image?\textbf{Q}MSA(\textbf{Q},\textbf{K},\textbf{V})=softmax(\frac{\mathbf{Q}\mathbf{K}^T}{\sqrt{d}})\textbf{V}&#34; title=&#34;\textbf{Q}MSA(\textbf{Q},\textbf{K},\textbf{V})=softmax(\frac{\mathbf{Q}\mathbf{K}^T}{\sqrt{d}})\textbf{V}&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://latex.codecogs.com/svg.image?MSA(\textbf{Q},\textbf{K},\textbf{V})=softmax(\frac{\mathbf{Q}\mathbf{K}^T}{\sqrt{d}})\textbf{V}&#34; title=&#34;MSA(\textbf{Q},\textbf{K},\textbf{V})=softmax(\frac{\mathbf{Q}\mathbf{K}^T}{\sqrt{d}})\textbf{V}&#34; /&gt;&lt;/p&gt;
 
       </description>
     </item>
