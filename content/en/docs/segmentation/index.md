@@ -50,3 +50,9 @@ inference time, argmax is applied after upsampling to obtain a single class per 
 <img src="Segmenter_compare_table.PNG"
    alt="Network"
    style="float: left; margin-right: 10px;" />
+   
+Inference. To handle varying image sizes during inference,
+we use a sliding-window with a resolution matching the
+training size. For multi-scale inference, following standard
+practice [10] we use rescaled versions of the image with
+scaling factors of (0.5, 0.75, 1.0, 1.25, 1.5, 1.75) and left-right flipping and average the result   
