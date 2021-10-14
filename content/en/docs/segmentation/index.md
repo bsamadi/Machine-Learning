@@ -35,4 +35,4 @@ The self-attention mechanism:
 
 <img src="https://latex.codecogs.com/svg.image?\boldsymbol{Q}&space;\in&space;\mathbb{R}^{N\times&space;d},&space;\boldsymbol{K}&space;\in&space;\mathbb{R}^{N\times&space;d},&space;\boldsymbol{V}&space;\in&space;\mathbb{R}^{N\times&space;d}" title="\boldsymbol{Q} \in \mathbb{R}^{N\times d}, \boldsymbol{K} \in \mathbb{R}^{N\times d}, \boldsymbol{V} \in \mathbb{R}^{N\times d}" />
 
-<img src="https://latex.codecogs.com/svg.image?\textbf{Q}MSA(\textbf{Q},\textbf{K},\textbf{V})=softmax(\frac{\mathbf{Q}\mathbf{K}^T}{\sqrt{d}})\textbf{V}" title="\textbf{Q}MSA(\textbf{Q},\textbf{K},\textbf{V})=softmax(\frac{\mathbf{Q}\mathbf{K}^T}{\sqrt{d}})\textbf{V}" />
+<img src="https://latex.codecogs.com/svg.image?MSA(\textbf{Q},\textbf{K},\textbf{V})=softmax(\frac{\mathbf{Q}\mathbf{K}^T}{\sqrt{d}})\textbf{V}" title="MSA(\textbf{Q},\textbf{K},\textbf{V})=softmax(\frac{\mathbf{Q}\mathbf{K}^T}{\sqrt{d}})\textbf{V}" />
