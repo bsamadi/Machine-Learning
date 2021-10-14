@@ -1539,6 +1539,8 @@ Transformer (ViT) and extend it to semantic segmentation.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;Segmenter.PNG&#34;
 alt=&#34;Network&#34;
 style=&#34;float: left; margin-right: 10px;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Transformer Encoder
+L layers, multi-headed self-attention (MSA), ponit-wise MLP, Layer Norm (LN)&lt;/p&gt;
 
       </description>
     </item>
