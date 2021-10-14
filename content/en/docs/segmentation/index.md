@@ -30,3 +30,9 @@ L layers, multi-headed self-attention (MSA), ponit-wise MLP, Layer Norm (LN)
 
 <img src="https://latex.codecogs.com/svg.image?a_{i-1}&space;=&space;MSA(LN(z_{i-1}))&plus;z_{i-1}" title="a_{i-1} = MSA(LN(z_{i-1}))+z_{i-1}" />
 <img src="https://latex.codecogs.com/svg.image?z_{i}&space;=&space;MLP(LN(a_{i-1}))&plus;a_{i-1}" title="z_{i} = MLP(LN(a_{i-1}))+a_{i-1}" />
+
+The self-attention mechanism:
+
+<img src="https://latex.codecogs.com/svg.image?\boldsymbol{Q}&space;\in&space;\mathbb{R}^{N\times&space;d},&space;\boldsymbol{K}&space;\in&space;\mathbb{R}^{N\times&space;d},&space;\boldsymbol{V}&space;\in&space;\mathbb{R}^{N\times&space;d}" title="\boldsymbol{Q} \in \mathbb{R}^{N\times d}, \boldsymbol{K} \in \mathbb{R}^{N\times d}, \boldsymbol{V} \in \mathbb{R}^{N\times d}" />
+
+<img src="https://latex.codecogs.com/svg.image?\textbf{Q}MSA(\textbf{Q},\textbf{K},\textbf{V})=softmax(\frac{\mathbf{Q}\mathbf{K}^T}{\sqrt{d}})\textbf{V}" title="\textbf{Q}MSA(\textbf{Q},\textbf{K},\textbf{V})=softmax(\frac{\mathbf{Q}\mathbf{K}^T}{\sqrt{d}})\textbf{V}" />
