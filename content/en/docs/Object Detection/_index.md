@@ -67,6 +67,8 @@ this work is at : https:// github.com/WongKinYiu/yolor.
    alt="Network"
    style="float: left; margin-right: 10px;" />
 
+
+
 [DETR](https://arxiv.org/pdf/2005.12872v3.pdf)
 
 DEtection TRansformer (DETR)
