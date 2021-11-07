@@ -12,11 +12,11 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    
-    - name: Checkout submodules
-      uses: textbook/git-checkout-submodule-action@master
-    
+    - name: Checkout repository and submodules
+      uses: actions/checkout@v2
+      with:
+        submodules: recursive
+  
     - name: install pandoc
       run: |
            wget https://github.com/jgm/pandoc/releases/download/2.10/pandoc-2.10-1-amd64.deb
